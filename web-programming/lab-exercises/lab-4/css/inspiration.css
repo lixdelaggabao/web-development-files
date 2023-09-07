@@ -1,0 +1,51 @@
+/* 
+    Name: Lixdel Louisse L. Aggabao
+    File name: inspiration.css
+    Date created: July 15, 2023
+    Description: This is the stylesheet for the inspiration webpage.
+*/
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    background-color: #FFDAB9;
+}
+
+h1, #quote-text, #quote-author {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#quote-container {
+    border: 5px solid black;
+    border-radius: 15pt;
+    background-color: teal;
+    padding: 20px;
+}
+
+#quote-text {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#quote-author {
+    font-style: italic;
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    margin: auto;
+    border-radius: 15pt;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+}

@@ -1,0 +1,73 @@
+/*
+    Name: Lixdel Louisse L. Aggabao
+    File name: flexbox.css
+    Date created: June 12, 2023
+    Description: This is the stylesheet for flexbox.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.box {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+}
+
+footer p {
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+h2 {
+    margin-top: 0;
+}

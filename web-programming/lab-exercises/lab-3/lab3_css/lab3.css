@@ -1,0 +1,101 @@
+/*
+    Name: Lixdel Louisse L. Aggabao
+    File name: lab3.css
+    Date created: June 12, 2023
+    Description: This is the stylesheet for Lab3.
+*/
+
+body {
+    background-color: #DDD78D;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #60594D;
+    color: #93A29B;
+    border: 4px solid #333333;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 4.2vw;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    border: 2px solid #333333;
+    border-radius: 15px;
+    margin: 0 3px;
+    color: #333333;
+    background-color: white;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8B635C;
+    background-color: #DCBF85;
+}
+
+nav {
+    font-size: 12pt;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+p, li {
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.general-paragraph {
+    text-align: left;
+}
+
+.quotation-paragraph {
+    display: flex;
+    background-color: #DCBF85;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+blockquote {
+    margin: 16px 0px;
+}
+
+img {
+    float: right;
+    width: 25vw;
+    margin: 10px;
+}
+
+footer nav {
+    text-align: center;
+}
+
+address {
+    text-align: right;
+    font-style: italic;
+    font-size: 10pt;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+}
