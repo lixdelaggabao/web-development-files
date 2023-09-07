@@ -1,0 +1,361 @@
+<!--
+	Name: Lixdel Louisse L. Aggabao
+    File name: courses.html
+    Date created: July 5, 2023
+    Description: This page shows a list of all the courses that I have finished.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="List of all the courses that I have finished">
+        <meta name="keywords" content="curriculum, courses">
+        <meta name="author" content="Lixdel Louisse L. Aggabao">
+		<title>Courses - Lixdel Aggabao</title>
+        <link rel="stylesheet" type="text/css" href="css/lixdelaggabao.css">
+        <script src="scripts/lixdelaggabao.js" defer></script>
+    </head>
+    <body class="primary-color">
+        <!-- Main header of the page -->
+        <header>
+            <div class="nav-left-side">
+                <a href="index.html">
+                    <!-- Lixdel Aggabao logo -->
+                    <img src="images/lixdel-aggabao-logo.png" alt="Logo of Lixdel Aggabao" id="lixdel-aggabao-logo">
+                </a>
+            </div>
+            <!-- Navigation bar -->
+            <nav class="nav-right-side">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">RESUME</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main content of the page -->
+        <main class="courses-page inverse-color">
+            <h1 class="courses-page">COURSES</h1>
+            <!-- Search bar -->
+            <div class="courses-page search-container">
+                <input type="search" placeholder="Search course name or code" onkeyup="searchCourse()" id="search-bar">
+            </div>
+            <!-- Filter and sort buttons -->
+            <div>
+                <ul class="courses-page filter-sort-buttons">
+                    <li>
+                        <input type="button" value="All levels" onclick="filterLevel('level-all-button')" id="level-all-button" class="courses-page filter-level-button active">
+                    </li>
+                    <li>
+                        <input type="button" value="Level 1" onclick="filterLevel('level-1-button')" id="level-1-button" class="courses-page filter-level-button">
+                    </li>
+                    <li>
+                        <input type="button" value="Level 2" onclick="filterLevel('level-2-button')" id="level-2-button" class="courses-page filter-level-button">
+                    </li>
+                    <li>
+                        <select onchange="sortCourses()" id="sort">
+                            <option value="ascending">Ascending</option>
+                            <option value="descending">Descending</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!-- List of all courses -->
+                <ul id="course-list">
+                    <li class="courses-page course-item">
+                        <!-- Information about Achieving Success in Changing Environments -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/achieving-success-in-changing-environments.jpg" alt="Image of Achieving Success in Changing Environments" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Achieving Success in Changing Environments</h2>
+                                <strong class="courses-page course-code">Course Code: CST8300</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Rapid changes in technology have created personal and employment choices that challenge each of us to find
+                                    our place as contributing citizens in the emerging society. Students explore the possibilities ahead, assess
+                                    their own aptitudes and strengths, and apply critical thinking and decision-making tools to help resolve some
+                                    of the important issues in our complex society with its competing interests.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Communications I -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/communications-i.jpg" alt="Image of Communications I" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Communications I</h2>
+                                <strong class="courses-page course-code">Course Code: ENL1813T</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Communication remains an essential skill sought by employers, regardless of discipline or field of study.
+                                    Using a practical, vocation-oriented approach, students focus on meeting the requirements of effective
+                                    communication. Through a combination of lectures, exercises, and independent learning, students practise
+                                    writing, speaking, reading, listening, locating and documenting information and using technology to
+                                    communicate professionally.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Computer Essentials -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/computer-essentials.jpg" alt="Image of Computer Essentials" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Computer Essentials</h2>
+                                <strong class="courses-page course-code">Course Code: CST8101</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Maintaining a computer, using operating system and productivity software, and expressing related environmental
+                                    and sustainability concerns, is an important part of working with Information Technology. Students explain
+                                    computer hardware, and use operating system software to maintain, utilize, and secure a computer. Theory is
+                                    reinforced with application by means of practical laboratory assessments, including using virtualization
+                                    software to install guest operating systems onto a host computer.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Introduction to Computer Programming -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/introduction-to-computer-programming.jpg" alt="Image of Introduction to Computer Programming" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Introduction to Computer Programming</h2>
+                                <strong class="courses-page course-code">Course Code: CST8116</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Possessing the fundamentals of logic, problem-solving and programming language structure provides a solid
+                                    foundation for further study in the field. Students develop introductory knowledge of computer programming
+                                    with emphasis on problem analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams
+                                    and testing, with the Java programming language used as a means to implement problem solution designs.
+                                    Theory is reinforced with application by means of practical laboratory assessments.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Introduction to Database -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/introduction-to-database.png" alt="Image of Introduction to Database" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Introduction to Database</h2>
+                                <strong class="courses-page course-code">Course Code: CST8215</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Databases are used to store data and are a core component of many information technology systems. Students
+                                    learn the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and use Structured 
+                                    Query Language (SQL) to create, modify and query a database.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Technical Mathematics for Computer Science -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/technical-mathematics-for-computer-science.jpg" alt="Image of Technical Mathematics for Computer Science" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Technical Mathematics for Computer Science</h2>
+                                <strong class="courses-page course-code">Course Code: MAT8001C</strong>
+                                <span class="courses-page course-level">Level: 1</span>
+                                <p class="courses-page course-description">
+                                    Students manipulate algebraic expressions, solve algebraic equations and linear systems and learn the
+                                    properties of and graph algebraic and transcendental functions. Students investigate computer number
+                                    systems in addition to Boolean algebra and logic to help solve problems involving computer systems.
+                                    Students also study the addition and subtraction of vectors using vector components.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Cooperative Education and Job Readiness -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/cooperative-education-and-job-readiness.jpg" alt="Image of Cooperative Education and Job Readiness" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Cooperative Education and Job Readiness</h2>
+                                <strong class="courses-page course-code">Course Code: GEP1001</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    Students are guided through a series of activities that prepare them to conduct a professional job search
+                                    and succeed in the workplace. Students identify their strengths and transferable skills and participate in
+                                    workshop-style sessions that focus on cover letter and resume development, interview techniques and job
+                                    search strategies.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Database Systems -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/database-systems.png" alt="Image of Database Systems" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Database Systems</h2>
+                                <strong class="courses-page course-code">Course Code: CST2355</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    Database systems can automate data processing tasks as well as tie into the security of information technology
+                                    systems. Students acquire practical experience using market-leading object-relational database management
+                                    systems like Oracle and MySQL. Students obtain hands-on experience with advanced engineering modeling tools
+                                    along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Object Oriented Programming (Java) -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/object-oriented-programming.png" alt="Image of Object Oriented Programming (Java)" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Object Oriented Programming (Java)</h2>
+                                <strong class="courses-page course-code">Course Code: CST8284</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    Working in the field of information technology as a programmer requires a firm understanding of
+                                    Object-Oriented Programming (OOP) concepts. Students explore object-oriented programming methodology
+                                    using the Java programming language. Object oriented concepts, such as encapsulation, inheritance,
+                                    abstraction and polymorphism are covered and reinforced with practical applications.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Operating System Fundamentals (GNU/Linux) -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/operating-system-fundamentals.jpg" alt="Image of Operating System Fundamentals (GNU/Linux)" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Operating System Fundamentals (GNU/Linux)</h2>
+                                <strong class="courses-page course-code">Course Code: CST8102</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    Operating systems form the backbone of information technology systems coordinating the interaction between
+                                    hardware and software. Students explore the basic concepts and components of Operating Systems (OS), and how
+                                    they function and interact with hardware and software components. Students examine the details of operating
+                                    system structures, process management, storage management, installation, configuration, and administration
+                                    both in theory and through practical assignments based on the GNU/Linux operating system.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Technical Communication for Engineering Technologies -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/technical-communication-for-engineering-technologies.jpg" alt="Image of Technical Communication for Engineering Technologies" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Technical Communication for Engineering Technologies</h2>
+                                <strong class="courses-page course-code">Course Code: ENL2019T</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    The ability to communicate effectively in a technically-oriented interdisciplinary workplace is a foundational
+                                    skill in an innovation-driven economy. Students are exposed to exercises and assignments designed to foster
+                                    independent and collaborative critical thinking, research, writing, visual communication and presentation
+                                    skills related to technical topics.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about The Dinner Party -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/the-dinner-party.jpeg" alt="Image of The Dinner Party" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">The Dinner Party</h2>
+                                <strong class="courses-page course-code">Course Code: HOS2288</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    Table manners are as unique to a culture as the foods they eat - how people eat varies widely from country to country.
+                                    Participants in this course explore the culture and customs of international dining practices.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="courses-page course-item">
+                        <!-- Information about Web Programming -->
+                        <article class="courses-page course-content">
+                            <div class="courses-page course-image-container">
+                                <img src="images/web-programming.jpg" alt="Image of Web Programming" class="courses-page course-image">
+                            </div>
+                            <div class="courses-page course-details">
+                                <h2 class="courses-page course-name">Web Programming</h2>
+                                <strong class="courses-page course-code">Course Code: CST8285</strong>
+                                <span class="courses-page course-level">Level: 2</span>
+                                <p class="courses-page course-description">
+                                    The World Wide Web (WWW) has become an integrated part of everyday life. Students develop basic skills of
+                                    web programming, website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based
+                                    solutions to problems of increasing interactivity and complexity. Lectures are reinforced by practical
+                                    assignments that encourage students to construct and maintain their own websites.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- Main footer of the page -->
+        <footer>
+            <!-- Icons with link to contact information -->
+            <ul class="contact-icon-list">
+                <!-- Email -->
+                <li class="contact-icon-item">
+                    <a href="mailto:agga0041@algonquinlive.com" target="_blank" class="contact-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" fill="white" class="contact-icon">
+                            <title>Email icon</title>
+                            <path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"/>
+                        </svg>
+                    </a>
+                </li>
+                <!-- Linkedin -->
+                <li>
+                    <a href="https://www.linkedin.com/in/lixdelaggabao/" target="_blank" class="contact-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white" class="contact-icon">
+                            <title>Linkedin icon</title>
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </li>
+                <!-- Github -->
+                <li>
+                    <a href="https://github.com/lixdelaggabao" target="_blank" class="contact-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white" class="contact-icon">
+                            <title>Github icon</title>
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <!-- Copyright information -->
+            <address>&copy; 2023 Lixdel Louisse L. Aggabao. All rights reserved.</address>
+        </footer>
+    </body>
+</html>

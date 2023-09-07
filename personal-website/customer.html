@@ -1,0 +1,192 @@
+<!--
+    Name: Lixdel Louisse L. Aggabao
+    File name: customer.html
+    Date created: May 25, 2023
+    Description: This page serves as a registration form for a customer.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Registration form for a customer">
+        <meta name="keywords" content="customer, registration, user info, location, personal details">
+        <meta name="author" content="Lixdel Louisse L. Aggabao">
+        <title>Customer Registration</title>
+    </head>
+    <body>
+        <div>
+            <h1>Customer Registration</h1>
+            <form action="Lab2Form.php" method="post">
+                <fieldset id="user-info-fieldset" name="user-info-fieldset">
+                    <legend id="user-info-legend">1. User Info</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="first-name" id="first-name-label">First Name</label>
+                            </td>
+                            <td>
+                                <label for="last-name" id="last-name-label">Last Name</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="first-name" name="first-name" value="Lixdel" readonly>
+                            </td>
+                            <td>
+                                <input type="text" id="last-name" name="last-name" maxlength="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="email" id="email-label">Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="email" id="email" name="email" placeholder="format for email is xxx@yyy.zzz" size="60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password" id="password-label">Password</label>
+                            </td>
+                            <td>
+                                <label for="password-repeat" id="password-repeat-label">Password Repeat</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="password" name="password" minlength="8" placeholder="at least 8 characters">
+                            </td>
+                            <td>
+                                <input type="password" id="password-repeat" name="password-repeat" minlength="8" placeholder="at least 8 characters">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <fieldset id="location-fieldset" name="location-fieldset">
+                    <legend id="location-legend">2. Location</legend>
+                    <table>
+                        <tr>
+                            <td colspan="3">
+                                <label for="address" id="address-label">Address</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" id="address" name="address" size="60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city" id="city-label">City</label>
+                            </td>
+                            <td>
+                                <label for="state" id="state-label">State</label>
+                            </td>
+                            <td>
+                                <label for="zip" id="zip-label">Zip</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="city" name="city">
+                            </td>
+                            <td>
+                                <input type="text" id="state" name="state" size="2">
+                            </td>
+                            <td>
+                                <input type="text" id="zip" name="zip" size="6">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone" id="phone-label">Phone</label>
+                            </td>
+                            <td>
+                                <label for="country" id="country-label">Country</label>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="NNN-NNN-NNNN">
+                            </td>
+                            <td>
+                                <select id="country" name="country">
+                                    <option value="canada" selected>Canada</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="brazil">Brazil</option>
+                                </select>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Continent
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="radio" id="north-america" name="continent" value="north-america">
+                                <label for="north-america" id="north-america-label">North America</label>
+                                <br>
+                                <input type="radio" id="europe" name="continent" value="europe">
+                                <label for="europe" id="europe-label">Europe</label>
+                                <br>
+                                <input type="radio" id="south-america" name="continent" value="south-america">
+                                <label for="south-america" id="south-america-label">South America</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Personal Details</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="birthday" id="birthday-label">Birth Day</label>
+                            </td>
+                            <td>
+                                <label for="fave-color" id="fave-color-label">Favorite Color</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date" id="birthday" name="birthday">
+                            </td>
+                            <td>
+                                <input type="color" id="fave-color" name="fave-color" value="#000000">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <h2>4. All Done</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="terms" name="terms" value="terms">
+                            <label for="terms" id="terms-label">
+                                I agree to the
+                                <a href="#">Terms of the Site</a>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Send" id="submit-button" name="submit-button">
+                            <input type="reset" value="Clear information" id="reset-button" name="reset-button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <footer>
+                &copy; 2023 Lixdel Louisse L. Aggabao. All rights reserved.
+            </footer>
+        </div>
+    </body>
+</html>

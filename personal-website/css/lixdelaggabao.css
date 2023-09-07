@@ -1,0 +1,477 @@
+/* 
+    Name: Lixdel Louisse L. Aggabao
+    File name: lixdelaggabao.css
+    Date created: July 5, 2023
+    Description: This is the stylesheet used by my personal website.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-color {
+    color: white;
+    background-color: #003060;
+}
+
+.inverse-color {
+    color: #003060;
+    background-color: white;
+}
+
+header {
+    height: auto;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lixdel-aggabao-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-right-side {
+    display: flex;
+    justify-content: center;
+}
+
+header ul, footer ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+}
+
+header li {
+    margin: 0 20px 0;
+}
+
+/* When screen width is less than or equal to 480px. */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-left-side {
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer li {
+    margin: 0 20px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0E86D4;
+}
+
+a:hover {
+    color: #68BBE3;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #0E86D4;
+}
+
+.contact-icon {
+    display: flex;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    fill: #0E86D4;
+}
+
+main.introduction-page, main.resume-page {
+    display: grid;
+    flex: 1;
+}
+
+main.introduction-page {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.introduction-page.introduction {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.introduction-page.photo {
+    grid-column: 4 / 6;
+    background: linear-gradient(to right, #FFFFFF 0%, #003799 35%, #003060 50%);
+    display: flex;
+}
+
+#lixdel-aggabao-photo {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+h1.introduction-page {
+    font-size: 5vw;
+    margin-bottom: 25px;
+}
+
+.introduction-page.description {
+    font-size: 2.5vw;
+}
+
+/* When screen width is less than or equal to 1024px. */
+@media screen and (max-width: 1024px) {
+    main.introduction-page {
+        grid-template-columns: 1fr;
+    }
+
+    .introduction-page.introduction {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .introduction-page.photo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-content: center;
+    }
+
+    #lixdel-aggabao-photo {
+        width: 50%;
+    }
+}
+
+main.courses-page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 10px 10px;
+    gap: 8px;
+}
+
+h1.courses-page {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0 20px;
+}
+
+.courses-page.search-container {
+    text-align: center;
+}
+
+#search-bar {
+    width: 50%;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-image: url("../images/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 8px 8px;
+    padding-left: 30px;
+}
+
+/* clear X button of the search bar from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width : 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width : 0;
+    height: 0;
+}
+
+/* clear X button of the search bar from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.courses-page.filter-sort-buttons {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.courses-page.filter-level-button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 20px;
+    background-color: #dddddd;
+    color: inherit;
+    font-size: 0.8rem;
+}
+
+.courses-page.filter-level-button:hover {
+    background-color: #bbbbbb;
+}
+
+.courses-page.filter-level-button.active {
+    background-color: #003060;
+    color: white;
+}
+
+#sort {
+    height: 100%;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    color: inherit;
+    font-size: 0.8rem;
+}
+
+#sort:focus {
+    border-color: #003060;
+}
+
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    list-style: none;
+}
+
+.courses-page.course-item {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.courses-page.course-content {
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.courses-page.course-image-container {
+    width: 30%;
+    display: flex;
+}
+
+.courses-page.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.courses-page.course-details {
+    width: 70%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.courses-page.course-description {
+    margin: 10px 0 0;
+}
+
+/* Placeholder for Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    color: #bbbbbb;
+    opacity: 1; /* Firefox */
+}
+
+/* Placeholder for Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    color: #bbbbbb;
+}
+
+/* Placeholder for Microsoft Edge */
+::-ms-input-placeholder {
+    color: #bbbbbb;
+}
+
+/* When screen width is less than or equal to 900px. */
+@media screen and (max-width: 900px) {
+    main.courses-page {
+        font-size: 1.8vw;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+
+    .courses-page.filter-sort-buttons {
+        gap: 5px;
+    }
+
+    #course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-page.course-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-page.course-details {
+        padding: 5px 0 0;
+        width: 100%;
+    }
+}
+
+main.resume-page {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+    padding: 10px;
+}
+
+main.resume-page > * {
+    padding: 20px;
+    border: 1px solid #555555;
+    border-radius: 15px;
+}
+
+h2.resume-page {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.resume-page.profile {
+    grid-column: 1 / 3;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.resume-page.left-column > section:not(:last-child), .resume-page.right-column > section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.resume-page.profile p {
+    margin-top: 15px;
+}
+
+.resume-page.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.resume-page.technical-skills-list, .resume-page.education-list,
+.resume-page.work-experience-list, .resume-page.completed-labs-list {
+    list-style: none;
+}
+
+.resume-page.soft-skills-list, .resume-page.work-experience-item-list {
+    padding: 0 20px;
+}
+
+.resume-page.technical-skills-item, .resume-page.soft-skills-item {
+    margin: 5px 0;
+}
+
+.resume-page.education-item, .resume-page.work-experience-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-page.education-title, .resume-page.education-details,
+.resume-page.work-experience-title, .resume-page.work-experience-date {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.resume-page.education-details, .resume-page.work-experience-date {
+    align-items: flex-end;
+}
+
+.resume-page.education-item, .resume-page.work-experience-item {
+    margin: 10px 0;
+}
+
+.resume-page.work-experience-company {
+    margin-bottom: 5px;
+}
+
+.resume-page.work-experience-description-item {
+    margin: 5px 20px;
+}
+
+.resume-page.completed-labs-list {
+    display: flex;
+    gap: 10px;
+}
+
+.resume-page.completed-labs-item {
+    display: flex;
+}
+
+.resume-page.completed-labs-thumbnail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    color: #003060;
+}
+
+.resume-page.completed-labs-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.resume-page.completed-labs-thumbnail:hover {
+    box-shadow: 0 0 2px 1px #0E86D4;
+}
+
+/* When screen width is less than or equal to 790px. */
+@media screen and (max-width: 790px) {
+    main.resume-page {
+        grid-template-columns: 1fr;
+        font-size: 1.8vw;
+    }
+
+    .resume-page.profile {
+        grid-column: 1 / 2;
+        font-size: 2vw;
+    }
+
+    .resume-page.completed-labs-list {
+        flex-direction: column;
+    }
+}
